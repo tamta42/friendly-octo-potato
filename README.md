@@ -14,12 +14,12 @@ Taipy is a Python framework for building interactive web applications with data 
 ### 1. Setup Environment
 
 ```bash
-# Create virtual environment
-python3 -m venv taipy_env
+# Create virtual environment (in Documents/temp to keep it out of repo)
+python3 -m venv ~/Documents/temp/taipy_env
 
 # Activate it
-source taipy_env/bin/activate  # On macOS/Linux
-# taipy_env\Scripts\activate   # On Windows
+source ~/Documents/temp/taipy_env/bin/activate  # On macOS/Linux
+# ~/Documents/temp/taipy_env\Scripts\activate   # On Windows
 
 # Install dependencies
 pip install -r requirements.txt
@@ -43,11 +43,13 @@ Then open: http://localhost:5001
 
 ```
 friendly-octo-potato/
-├── taipy_env/              # Python virtual environment
 ├── simple_taipy_app.py     # Basic Taipy GUI example
 ├── advanced_taipy_app.py   # Data processing pipeline example
 ├── requirements.txt        # Python dependencies
 └── README.md              # This file
+
+~/Documents/temp/
+└── taipy_env/              # Python virtual environment (kept outside repo)
 ```
 
 ## 🎮 What You Can Try
